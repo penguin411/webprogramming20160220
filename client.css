@@ -1,0 +1,59 @@
+#logo{
+    float:left;
+    width:340px;
+    height:400px;
+    margin-right: 10px;
+    background-color:#fff;
+    border:1px solid #000;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+
+#right{
+    height:400px;
+    width:250px;
+    float:left;
+}
+
+#right input,#right select{
+    width:140px;
+    float:right;
+}
+
+#right input[type=submit]{
+    width:auto;
+}
+
+#right label{
+    display:block;
+    margin-bottom: 5px;
+}
+
+#signIn{
+    height:100px;
+    width:250px;
+    background-color:#fff;
+    border:1px solid #000;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:20px 3px;
+}
+
+#signUp{
+    height:290px;
+    width:250px;
+    margin-top: 10px;
+    background-color:#fff;
+    border:1px solid #000;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:20px 3px;
+}
+
+#signUp > h2 {
+    margin-top: 0;
+    text-align: center;
+}
