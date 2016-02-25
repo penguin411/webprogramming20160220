@@ -47,21 +47,27 @@ var signUp = function(){
     displayError('');
     if(validateSignUpForm()){
         var form = document.forms['signUpForm'];
+        console.log(form);
         var data = {
             email:form['signUpEmail'].value,
             password:form['signUpPassword'].value,
             firstname:form['signUpFirstName'].value,
-            lastname:form['signUpLastName'].value,
+            familyname:form['signUpFamilyName'].value,
             gender:form['signUpGender'].value,
             city:form['signUpCity'].value,
             country:form['signUpCountry'].value
         };
         var signUp = serverstub.signUp(data);
+        console.log(signUp);
         if(!signUp.success){
+            console.log(4);
             displayError(signUp.message)
         }
         else{
-            serverstub.signIn(data.email,data.password);
+            console.log(5);
+            var signInResponse = serverstub.signIn(data.email,data.password);
+            // signInResponse = {success: true/false, message: "whatever", data: {token: sihfuiafueuhiuruahuihauih34646}};
+            // Check if response was successful and store token!
             displayView('profileView');
         }
     }
