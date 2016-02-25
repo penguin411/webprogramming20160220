@@ -23,11 +23,14 @@
 
 #right input[type=submit]{
     width:auto;
+    float:right;
 }
 
 #right label{
     display:block;
     margin-bottom: 5px;
+    float:right;
+
 }
 
 #signIn{
@@ -53,7 +56,98 @@
     padding:20px 3px;
 }
 
-#signUp > h2 {
+#signUp > h4 {
     margin-top: 0;
     text-align: center;
+    margin-bottom: 4px;
+}
+
+#view{
+    height:400px;
+    width:600px;
+    margin: 0 auto;
+}
+
+#errorBox{
+    height:50px;
+    width:600px;
+    margin:15px auto;
+    padding:20px;
+    border:2px solid;
+    visibility:hidden;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+
+#menu{
+    height:30px;
+    color:#fff;
+}
+
+#menu > li{
+    float:left;
+}
+
+#menu > li > a {
+    display:block;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+#menu > li > .linkActive{
+    color:#000;
+}
+
+.tab {
+    margin-top: -1px;
+    padding: 20px;
+}
+
+.tab.active {
+    display: block;
+}
+
+#tabAccount label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#tabAccount input {
+    float: right;
+}
+
+#tabAccount form {
+    margin-bottom: 40px;
+}
+
+#logout {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #fff;
+    border: 1px #000 solid;
+    color: #fff;
+}
+
+.wallPost {
+    padding: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+.wallPost > h3 {
+
+}
+
+.wallPost > p {
+
+}
+
+.refreshWall {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: -10px 0 10px;
+    background-color: #fff;
+    border: 1px #000 solid;
 }
